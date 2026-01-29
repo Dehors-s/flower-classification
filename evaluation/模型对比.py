@@ -8,6 +8,10 @@ import sys
 
 # 添加当前目录到路径
 sys.path.append(os.path.dirname(__file__))
+# 添加models目录到路径以导入vit_v1
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+models_dir = os.path.join(project_root, 'models')
+sys.path.append(models_dir)
 
 from vit_v1 import create_paddle_model, Config
 
