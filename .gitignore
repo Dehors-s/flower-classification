@@ -1,0 +1,5 @@
+*.zip
+jpg/
+test_data/
+split_datasets/
+*.jpg
